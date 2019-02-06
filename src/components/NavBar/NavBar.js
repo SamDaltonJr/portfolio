@@ -20,7 +20,6 @@ export default class NavBar extends React.Component {
   };
 
   toggle = () => {
-    console.log('maybe this works');
     const { showingMore } = this.state;
     this.setState({ showingMore: !showingMore });
   };
