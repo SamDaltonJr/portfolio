@@ -1,27 +1,93 @@
-main {
+.Projects-container {
   text-align: center;
+}
+
+.Projects-container h2 {
+  font-size: 1.75rem;
 }
 
 .Project-card {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
+  background-color: #dddddd;
+  border-radius: 10px;
+}
+
+.Project-card h3 {
+  padding: 20px;
+  font-size: 24px;
+  margin-bottom: 0px;
+}
+
+.github-link {
+  margin: 1rem;
+}
+
+.app-link {
+  margin: 1rem;
+}
+
+.hero {
+  display: grid;
+  grid-template: auto/1fr;
+  margin: 1rem auto 0.25rem;
+  padding: 2em;
+  background-color: #dddddd;
+  border-radius: 4px;
+  height: 600px;
+}
+
+.hero h3 {
+  font-size: 1.5rem;
+}
+
+.hero p {
+  margin: 1em 0.5rem;
+  text-align: left;
+}
+
+.hero img {
+  max-width: 100%;
+  max-height: 400px;
+  margin: 0 auto;
+}
+
+.hero-titles {
+  display: flex;
+  margin: 1rem 0;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  height: 175px;
 }
 
 .project-stack {
   text-align: center;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 10px;
+  width: 100%;
+  padding: 1rem 0rem;
 }
 
 .tech-card {
   width: 150px;
-  height: 60px;
+  height: 80px;
   text-align: center;
+  background-color: white;
+  margin: 10px;
+  border-radius: 10px;
 }
 
 .tech-card span {
   display: block;
+  padding: 5px;
+}
+
+.tech-card img {
+  padding: 10px 0 5px 0;
 }
 
 .logo32 {
