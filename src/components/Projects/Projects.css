@@ -35,7 +35,7 @@
   padding: 2em;
   background-color: #dddddd;
   border-radius: 4px;
-  height: 600px;
+  max-height: 700px;
 }
 
 .hero h3 {
@@ -49,8 +49,9 @@
 
 .hero img {
   max-width: 100%;
-  max-height: 400px;
+  max-height: 500px;
   margin: 0 auto;
+  border-radius: 4px;
 }
 
 .hero-titles {
@@ -59,7 +60,15 @@
   flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
-  height: 175px;
+  max-width: 600px;
+  max-height: 250px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.made-with {
+  margin-top: 1rem;
+  margin-bottom: 0;
 }
 
 .project-stack {
@@ -69,7 +78,7 @@
   justify-content: space-evenly;
   margin-top: 10px;
   width: 100%;
-  padding: 1rem 0rem;
+  padding: 0rem 0rem 1rem 0rem;
 }
 
 .tech-card {
@@ -98,3 +107,20 @@
 .logo200 {
   height: 32px;
 }
+
+/* @media only screen and (min-width: 800px) {
+  .hero {
+    max-height: 1000px;
+    grid-template: auto/1fr 1fr;
+  }
+
+  .hero img {
+    grid-column-start: 2;
+    max-height: initial;
+    border-radius: 4px;
+  }
+
+  .hero-titles {
+    grid-row-start: 1;
+  }
+} */

@@ -78,15 +78,13 @@ export default class Projects extends React.Component {
               <div className="hero-titles">
                 <h3>Easily create new lists for your favorite store</h3>
                 <p>
-                  Using either your current or given location, find the nearest
-                  grocery store to associate with your shopping list. Hopefully
-                  other users have begun to populate item's aisle locations in
-                  that store. Just start entering your items and you're ready to
-                  shop.
+                  Find the nearest grocery store to associate with your shopping
+                  list. Just start entering your items and you're ready to shop.
                 </p>
               </div>
             </section>
           </Carousel>
+          <p className="made-with">Made with:</p>
           <ul className="project-stack">
             <li className="tech-card">
               <img src={react} alt="react logo" className="logo32" />
