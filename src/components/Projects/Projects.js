@@ -70,7 +70,7 @@ export default class Projects extends React.Component {
             <section className="hero">
               <img src={items} alt="Gocery Items Page" />
               <div className="hero-titles">
-                <h3>Breeze through your shopping list</h3>
+                <h3>Breeze through shopping lists</h3>
                 <p>
                   Grocery shopping becomes easier when your shopping list is
                   automatically sorted by aisle location. Adding an item
