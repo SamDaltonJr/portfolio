@@ -1,8 +1,10 @@
 import React from 'react';
 
+import './ContactForm.css';
+
 const ContactForm = () => (
   <form
-    classNAme="contact-form"
+    className="contact-form"
     method="POST"
     action="https://formspree.io/spdaltonjr@gmail.com"
   >

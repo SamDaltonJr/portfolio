@@ -45,7 +45,7 @@ li a {
   vertical-align: middle;
 }
 
-li a:hover {
+.navbar-link:hover {
   background-color: #111;
 }
 

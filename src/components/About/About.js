@@ -5,8 +5,8 @@ export default class About extends React.Component {
   render() {
     return (
       <div className="About-container">
-        <h2>About me</h2>
         <div className="About-card">
+          <h2>About me</h2>
           <p>primary summary paragraph</p>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer

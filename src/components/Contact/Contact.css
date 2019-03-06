@@ -16,5 +16,29 @@
 }
 
 .Contact-card {
-  text-align: left;
+  text-align: center;
+}
+
+.contact img {
+  border-radius: 50%;
+  height: 32px;
+  width: 32px;
+}
+
+.find-me-on {
+  max-width: 600px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.find-me-on p {
+  margin-bottom: 5px;
+}
+
+.contact-stack {
+  text-align: center;
+  max-width: 300px;
 }

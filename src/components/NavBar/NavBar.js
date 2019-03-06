@@ -75,10 +75,10 @@ export default class NavBar extends React.Component {
       <div className="NavBar-container">
         <nav className="NavBar">
           <ul>
-            <li className="NavBar-header">
+            <li className="NavBar-header navbar-link">
               <a href="#home">Sam Dalton</a>
             </li>
-            <li className="right pic">
+            <li className="right pic navbar-link">
               <a
                 title="LinkedIn @SamDaltonJr"
                 href="https://linkedin.com/in/samdaltonjr"
@@ -86,7 +86,7 @@ export default class NavBar extends React.Component {
                 <img src={linkedin} alt="LinkedIn logo" className="linkedin" />
               </a>
             </li>
-            <li className="right pic">
+            <li className="right pic navbar-link">
               <a
                 title="github @SamDaltonJr"
                 href="https://github.com/SamDaltonJr"
@@ -94,13 +94,13 @@ export default class NavBar extends React.Component {
                 <img src={github} alt="github logo" />
               </a>
             </li>
-            <li className="right">
+            <li className="right navbar-link">
               <a href="#contact">Contact</a>
             </li>
-            <li className="right">
+            <li className="right navbar-link">
               <a href="#about">About Me</a>
             </li>
-            <li className="right">
+            <li className="right navbar-link">
               <a href="#projects">Projects</a>
             </li>
           </ul>
