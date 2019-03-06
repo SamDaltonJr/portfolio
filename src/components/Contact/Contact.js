@@ -21,6 +21,8 @@ export default class Contact extends React.Component {
                 <a
                   title="LinkedIn @SamDaltonJr"
                   href="https://linkedin.com/in/samdaltonjr"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <img src={linkedin} alt="LinkedIn logo" />
                 </a>
@@ -29,6 +31,8 @@ export default class Contact extends React.Component {
                 <a
                   title="github @SamDaltonJr"
                   href="https://github.com/SamDaltonJr"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <img src={github} alt="github logo" />
                 </a>
@@ -37,6 +41,8 @@ export default class Contact extends React.Component {
                 <a
                   title="twitter @SamDaltonJr"
                   href="https://twitter.com/SamDaltonJr"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <img src={twitter} alt="github logo" />
                 </a>

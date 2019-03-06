@@ -23,6 +23,9 @@ export default function HomePage() {
           <Contact />
         </section>
       </main>
+      <hr />
+      <footer>&#9400; 2019 Sam Dalton, Jr.</footer>
+      <hr />
     </React.Fragment>
   );
 }
