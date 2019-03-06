@@ -1,3 +1,3 @@
-import About from './Contact';
+import About from './About';
 
 export default About;

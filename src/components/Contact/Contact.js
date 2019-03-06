@@ -1,7 +1,16 @@
 import React from 'react';
 
-export class Contact extends React.Component {
+import './Contact.css';
+
+export default class Contact extends React.Component {
   render() {
-    return <div className="Contact-container" />;
+    return (
+      <div className="Contact-container">
+        <h2>Contact Me</h2>
+        <div className="Contact-card">
+          <p>Contact me I guess</p>
+        </div>
+      </div>
+    );
   }
 }
