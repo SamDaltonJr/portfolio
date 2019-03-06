@@ -33,6 +33,8 @@ export default class Projects extends React.Component {
               className="github-link"
               title="GoCery repository"
               href="https://github.com/thinkful-ei25/hiphip"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               GoCery
             </a>
@@ -41,6 +43,8 @@ export default class Projects extends React.Component {
               className="app-link"
               title="GoCery Live"
               href="https://gocery-app.netlify.com"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               Live
             </a>
@@ -116,6 +120,8 @@ export default class Projects extends React.Component {
               className="github-link"
               title="Inventory Manager App repository"
               href="https://github.com/thinkful-ei25/sam-inventory-management-client"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               Inventory Manager
             </a>
@@ -124,6 +130,8 @@ export default class Projects extends React.Component {
               className="app-link"
               title="Inventory Managemer App"
               href="https://inventory-management-app-fo76.herokuapp.com"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               Live
             </a>
