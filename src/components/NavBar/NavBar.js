@@ -44,6 +44,8 @@ export default class NavBar extends React.Component {
           <a
             title="github @SamDaltonJr"
             href="https://github.com/SamDaltonJr"
+            target="_blank"
+            rel="noopener noreferrer"
             onClick={this.toggle}
           >
             <img src={github} alt="github logo" />
@@ -51,6 +53,8 @@ export default class NavBar extends React.Component {
           <a
             title="LinkedIn @SamDaltonJr"
             href="https://linkedin.com/in/samdaltonjr"
+            target="_blank"
+            rel="noopener noreferrer"
             onClick={this.toggle}
           >
             <img src={linkedin} alt="LinkedIn logo" className="linkedin" />

@@ -11,10 +11,10 @@ export default class About extends React.Component {
           <p>
             I graduated from the University of Virginia in May 2017 with a
             Bachelor of Science in Commerce. My concentrations were in Finance
-            and Information Technology and I completed the rigourous
-            Quantitative Finance track. Between my education and past work
-            experience, I am very well-versed in the world of finance and
-            particuarly investment management.
+            and Information Technology alongside a track in Quantitative
+            Finance. Between my education and past work experience, I am very
+            well-versed in the world of finance and particuarly investment
+            management.
           </p>
           <p>
             In my free time, I try digesting sports in about any way possible,

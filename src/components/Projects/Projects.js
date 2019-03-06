@@ -66,7 +66,7 @@ export default class Projects extends React.Component {
             <section className="hero">
               <img src={gocerylanding} alt="Gocery Landing Page" />
               <div className="hero-titles">
-                <h3>Welcome to GoCery</h3>
+                <h3>Shop with GoCery</h3>
                 <p>
                   Spend less time in the supermarket by using crowd-sourced
                   aisle information.
@@ -228,7 +228,7 @@ export default class Projects extends React.Component {
               href="/files/blackjack.zip"
               download
             >
-              Live
+              Play
             </a>
           </h3>
           <Carousel>

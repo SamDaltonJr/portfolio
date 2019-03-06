@@ -5,6 +5,7 @@
 .About-container h2 {
   font-size: 1.75rem;
   padding: 20px;
+  padding-bottom: 0px;
 }
 
 .About-card {
@@ -26,5 +27,5 @@
 }
 
 .About-card > p:last-child {
-  padding-bottom: 20px;
+  padding-bottom: 3rem;
 }
