@@ -33,8 +33,8 @@
   display: grid;
   grid-template: auto/1fr;
   margin: 1rem auto 0.25rem;
-  padding: 2em;
-  padding-bottom: 1em;
+  padding: 1rem;
+  padding-bottom: 0;
   background-color: #dddddd;
   border-radius: 4px;
   max-height: 700px;
@@ -42,6 +42,8 @@
 
 .hero h3 {
   font-size: 1.5rem;
+  padding: 10px;
+  padding-top: 0px;
 }
 
 .hero p {
@@ -63,7 +65,6 @@
   align-items: center;
   justify-content: center;
   max-width: 600px;
-  max-height: 325px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -110,19 +111,55 @@
   height: 32px;
 }
 
-/* @media only screen and (min-width: 800px) {
-  .hero {
-    max-height: 1000px;
-    grid-template: auto/1fr 1fr;
+.project-description {
+  max-width: 600px;
+  width: 80%;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project-pic {
+  max-width: 600px;
+  width: 80%;
+}
+
+.GoCery .hero-titles {
+  height: 240px;
+}
+
+.FO76 .hero-titles {
+  height: 220px;
+}
+
+.Blackjack .hero-titles {
+  height: 300px;
+}
+
+.NoteShark .hero-titles {
+  height: 240px;
+}
+
+@media only screen and (min-width: 800px) {
+  .GoCery .hero-titles {
+    height: 175px;
   }
 
-  .hero img {
-    grid-column-start: 2;
-    max-height: initial;
-    border-radius: 4px;
+  .FO76 .hero-titles {
+    height: 140px;
   }
 
-  .hero-titles {
-    grid-row-start: 1;
+  .Blackjack .hero-titles {
+    height: 175px;
   }
-} */
+
+  .NoteShark .hero-titles {
+    height: 150px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .FO76 .hero img {
+    height: 250px;
+  }
+}

@@ -4,6 +4,7 @@
 
 .Contact-container h2 {
   font-size: 1.75rem;
+  padding: 20px;
 }
 
 .Contact-card {
@@ -19,10 +20,22 @@
   text-align: center;
 }
 
+.contact {
+  width: 100px;
+  text-align: center;
+}
+
 .contact img {
   border-radius: 50%;
   height: 32px;
   width: 32px;
+}
+
+.contact a {
+  height: 32px;
+  width: 32px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .find-me-on {
