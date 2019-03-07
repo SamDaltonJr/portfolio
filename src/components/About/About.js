@@ -31,11 +31,6 @@ export default class About extends React.Component {
             career as a software developer.
           </p>
           <p>
-            I'm currently trying to delve into the world of data science,
-            particuarly using Python, with the hopes that it'll somehow help me
-            pick my March Madness bracket or improve my fantasy football team.
-          </p>
-          <p>
             In my free time, I try digesting sports in about any way possible,
             whether that be watching as many sporting events as feasibly
             possible or listening to sports radio all day, particuarly DFW's{' '}
@@ -89,6 +84,11 @@ export default class About extends React.Component {
             stage venture capital firm, and a private wealth management firm.
             Between my education and past work experience, I am very well-versed
             in the world of finance, particuarly investment management.
+          </p>
+          <p>
+            I'm currently trying to delve into the world of data science,
+            particuarly using Python, with the hopes that it'll somehow help me
+            pick my March Madness bracket or improve my fantasy football team.
           </p>
           {showMore}
         </div>
