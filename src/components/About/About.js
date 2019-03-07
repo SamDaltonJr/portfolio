@@ -7,21 +7,28 @@ export default class About extends React.Component {
       <div className="About-container">
         <div className="About-card">
           <h2>About me</h2>
-          <p>About my aspirations to be a coder.</p>
+          <p>
+            I am a full-stack JavaScript developer with experience using
+            Node.js, React, MongoDB, PostgreSQL, and jQuery to build web
+            applications.
+          </p>
           <p>
             I graduated from the University of Virginia in May 2017 with a
             Bachelor of Science in Commerce. My concentrations were in Finance
             and Information Technology alongside a track in Quantitative
-            Finance. Between my education and past work experience, I am very
-            well-versed in the world of finance and particuarly investment
-            management.
+            Finance. Through primarily internships, my previous employers
+            include the endowment of a large private research university, a real
+            estate investment firm, an early stage venture capital firm, and a
+            private wealth management firm. Between my education and past work
+            experience, I am very well-versed in the world of finance and
+            particuarly investment management.
           </p>
           <p>
             In my free time, I try digesting sports in about any way possible,
             whether that be watching as many sporting events as feasibly
-            possible or listening to sports radio all day, particuarly{' '}
-            <i>SportsRadio 1310 AM & 96.7 FM The Ticket</i> in DFW. In the fall,
-            my Sundays are dedicated to following my multiple fantasy football
+            possible or listening to sports radio all day, particuarly DFW's{' '}
+            <i>SportsRadio 1310 AM & 96.7 FM The Ticket</i>. In the fall, my
+            Sundays are dedicated to following my multiple fantasy football
             teams and the Dallas Cowboys, although I'm too young to even
             remember any of their Super Bowls. Come every March, my eyes are
             fixed on college basketball as I follow March Madness and pull for

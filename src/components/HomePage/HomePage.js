@@ -17,7 +17,7 @@ export default function HomePage() {
       <main>
         <section id="home">
           <div className="intro-card">
-            <h1>Hello, I'm Sam Dalton</h1>
+            <h1>Sam Dalton</h1>
             <img src={me} alt="Sam Dalton on Texas Senate Floor" />
             <h2>Full-stack web developer based in Dallas, TX</h2>
           </div>
