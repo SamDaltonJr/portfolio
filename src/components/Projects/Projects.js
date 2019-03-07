@@ -140,7 +140,7 @@ export default class Projects extends React.Component {
             |
             <a
               className="app-link"
-              title="Inventory Managemer App"
+              title="Inventory Managener App"
               href="https://inventory-management-app-fo76.herokuapp.com"
               target="_blank"
               rel="noopener noreferrer"
@@ -283,7 +283,7 @@ export default class Projects extends React.Component {
             |
             <a
               className="app-link"
-              title="Download Blackjack app"
+              title="NoteShark app link"
               href="https://knotes-client-sam.herokuapp.com/"
               target="_blank"
               rel="noopener noreferrer"
