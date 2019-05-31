@@ -140,7 +140,7 @@ export default class Projects extends React.Component {
             |
             <a
               className="app-link"
-              title="Inventory Managener App"
+              title="Inventory Manager App"
               href="https://inventory-management-app-fo76.herokuapp.com"
               target="_blank"
               rel="noopener noreferrer"

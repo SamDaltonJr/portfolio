@@ -10,14 +10,14 @@ const ContactForm = () => (
   >
     <div className="form-field">
       <label htmlFor="name">
-        <div className="label-content">Name:</div>
+        <div className="label-content">Your Name:</div>
         <input type="text" name="name" required />
       </label>
     </div>
 
     <div className="form-field">
       <label htmlFor="email">
-        <div className="label-content">Email:</div>
+        <div className="label-content">Your Email:</div>
         <input type="email" name="email" required />
       </label>
     </div>

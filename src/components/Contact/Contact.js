@@ -15,6 +15,12 @@ export default class Contact extends React.Component {
           <h2>Contact Me</h2>
           <ContactForm />
           <div className="find-me-on">
+            <p>
+              Send me an email at{' '}
+              <a className="email-link" href="mailto: spdaltonjr@gmail.com">
+                spdaltonjr@gmail.com
+              </a>
+            </p>
             <p>Find me on</p>
             <ul className="contact-stack">
               <li className="contact">

@@ -23,15 +23,42 @@ textarea {
 
 .contact-form input,
 .contact-form textarea {
-  display: flex;
-  flex: 1;
   width: 100%;
   max-width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+.contact-form button {
+  height: 40px;
 }
 
 @media only screen and (max-width: 400px) {
   .contact-form input,
-  .contact-form textarea {
+  .contact-form textarea,
+  .contact-form button {
     max-width: 250px;
+  }
+
+  .contact-form button {
+    -webkit-appearance: none;
+    height: 50px;
+    border-color: rgb(216, 216, 216), rgb(209, 209, 209), rgb(186, 186, 186);
+    border-style: solid;
+    border-width: 1px;
+    padding: 1px 7px 2px;
+    align-items: flex-start;
+    text-align: center;
+    cursor: default;
+    box-sizing: border-box;
+    border-image: initial;
+    text-rendering: auto;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
   }
 }
