@@ -17,6 +17,7 @@
   border-radius: 10px;
   padding-top: 25px;
   padding-bottom: 25px;
+  margin-bottom: 25px;
 }
 
 .Contact-card {
@@ -90,5 +91,15 @@
     background-image: url(../../images/uva-rotunda-2-mobile.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
+  }
+
+  .Contact-Background {
+    margin: 10px;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  .Contact-card {
+    background-size: auto 100%;
   }
 }

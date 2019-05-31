@@ -40,6 +40,10 @@ p i {
   text-align: center;
 }
 
+.space-eater-bottom {
+  height: 50px;
+}
+
 @media only screen and (min-width: 600px) {
   .intro {
     background-image: url(../../images/dallas-dusk.jpg);
