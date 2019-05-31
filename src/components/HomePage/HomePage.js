@@ -16,10 +16,16 @@ export default function HomePage() {
       </header>
       <main>
         <section id="home">
-          <div className="intro-card">
-            <h1>Sam Dalton</h1>
-            <img src={me} alt="Sam Dalton on Texas Senate Floor" />
-            <h2>Full-stack web developer based in Dallas, TX</h2>
+          <div className="intro">
+            <div className="intro-card">
+              <h1>Sam Dalton</h1>
+              <img
+                className="prof-pic"
+                src={me}
+                alt="Sam Dalton on Texas Senate Floor"
+              />
+              <h2>Full-stack web developer based in Dallas, TX</h2>
+            </div>
           </div>
         </section>
         <hr className="divider" />
@@ -38,6 +44,7 @@ export default function HomePage() {
       <hr />
       <footer>&#9400; 2019 Sam Dalton, Jr.</footer>
       <hr />
+      <div className="space-eater-bottom" />
     </React.Fragment>
   );
 }

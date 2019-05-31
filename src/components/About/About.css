@@ -4,12 +4,14 @@
 
 .About-container h2 {
   font-size: 1.75rem;
-  padding: 20px;
   padding-bottom: 0px;
+  color: #e57200;
 }
 
 .About-card {
   width: 80%;
+  padding-top: 20px;
+  padding-bottom: 20px;
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
@@ -24,6 +26,7 @@
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
+  color: #232d4b;
 }
 
 .About-card > p:last-child {
@@ -39,4 +42,19 @@
   padding: 0 !important;
   font: inherit;
   cursor: pointer;
+}
+
+.sports-pics {
+  max-width: 600px;
+  margin-top: 30px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sports-pics img {
+  max-width: 300px;
 }

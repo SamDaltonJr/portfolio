@@ -4,6 +4,8 @@
 
 .Projects-container h2 {
   font-size: 1.75rem;
+  color: #e57200;
+  padding: 20px;
 }
 
 .Project-card {
@@ -19,6 +21,7 @@
   padding: 20px;
   font-size: 24px;
   margin-bottom: 0px;
+  color: #e57200;
 }
 
 .github-link {
@@ -49,6 +52,7 @@
 .hero p {
   margin: 1em 0.5rem;
   text-align: left;
+  color: #232d4b;
 }
 
 .hero img {
@@ -72,6 +76,7 @@
 .made-with {
   margin-top: 2rem;
   margin-bottom: 0;
+  color: #232d4b;
 }
 
 .project-stack {

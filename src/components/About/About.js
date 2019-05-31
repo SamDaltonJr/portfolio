@@ -1,6 +1,9 @@
 import React from 'react';
 
 import './About.css';
+
+import cowboys from '../../images/go-cowboys.jpg';
+import hoos from '../../images/natty-champs.jpg';
 export default class About extends React.Component {
   constructor(props) {
     super(props);
@@ -39,15 +42,27 @@ export default class About extends React.Component {
             teams and the Dallas Cowboys, although I'm too young to even
             remember any of their Super Bowls. Come every March, my eyes are
             fixed on college basketball as I follow March Madness and pull for
-            my Virginia Cavaliers... please don't bring up UMBC. I'll argue with
-            any NBA fan that the 2011 Dallas Mavericks championship led by Dirk
-            Nowitzki was the best NBA championship run in recent memory and
-            continues to age like fine wine with the rise of NBA superteams.
-            While the Warriors currently dominate the league, I watch Luka
-            Dončić highlight tapes hoping that the Mavs will turn into the next
-            NBA superteam someday. My other sports teams include the Texas
+            my Virginia Cavaliers, your <i>2019 NCAA National Champions</i>.
+            Forget about whatever happened in 2018. I'll argue with any NBA fan
+            that the 2011 Dallas Mavericks championship led by Dirk Nowitzki was
+            the best NBA championship run in recent memory — and continues to
+            age like fine wine with the rise of NBA superteams. While the
+            Warriors currently dominate the league, I watch Luka Dončić
+            highlight tapes hoping that the Mavs will turn into the next NBA
+            superteam someday. My other sports teams include the Texas
             Longhorns, the Texas Rangers, and the Dallas Stars.
           </p>
+          <ul className="sports-pics">
+            <li>
+              <img
+                src={hoos}
+                alt="Virginia Cavaliers 2019 National Champions"
+              />
+            </li>
+            <li>
+              <img src={cowboys} alt="2019 Cowboys-Seahawks game" />
+            </li>
+          </ul>
           <button onClick={this.toggle.bind(this)} className="read-button">
             Read Less
           </button>
