@@ -60,8 +60,30 @@ export default class Projects extends React.Component {
             >
               Kaggle
             </a>
+            |
+            <a
+              className="app-link"
+              title="Competition Video Presentation"
+              href="https://youtu.be/R-dqwaqfOtw?si=N86xRgw1zuv4uxkZ"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Video
+            </a>
           </h3>
           <Carousel>
+            <section className="hero">
+              <iframe
+                width="100%"
+                height="400"
+                src="https://www.youtube.com/embed/R-dqwaqfOtw"
+                title="NFL Big Data Bowl 2026 - Closure Ratio Presentation"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                style={{ maxWidth: '100%' }}
+              />
+            </section>
             <section className="hero">
               <div className="hero-titles">
                 <h3>Introducing Closure Ratio</h3>
