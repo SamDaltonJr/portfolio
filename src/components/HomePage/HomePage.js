@@ -24,7 +24,7 @@ export default function HomePage() {
                 src={me}
                 alt="Sam Dalton on Texas Senate Floor"
               />
-              <h2>Full-stack web developer based in Dallas, TX</h2>
+              <h2>Full-stack developer & Data Scientist based in Dallas, TX</h2>
             </div>
           </div>
         </section>
@@ -42,7 +42,7 @@ export default function HomePage() {
         </section>
       </main>
       <hr />
-      <footer>&#9400; 2019 Sam Dalton, Jr.</footer>
+      <footer>&#9400; 2026 Sam Dalton, Jr.</footer>
       <hr />
       <div className="space-eater-bottom" />
     </React.Fragment>
