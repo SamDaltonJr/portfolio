@@ -42,7 +42,7 @@ export default function HomePage() {
         </section>
       </main>
       <hr />
-      <footer>&#9400; 2019 Sam Dalton, Jr.</footer>
+      <footer>&#9400; 2026 Sam Dalton, Jr.</footer>
       <hr />
       <div className="space-eater-bottom" />
     </React.Fragment>

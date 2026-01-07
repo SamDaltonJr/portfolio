@@ -3,9 +3,11 @@
 }
 
 .Projects-container h2 {
-  font-size: 1.75rem;
+  font-size: 2.5rem;
+  font-weight: 700;
   color: #e57200;
   padding: 20px;
+  margin-bottom: 2rem;
 }
 
 .Project-card {
@@ -13,8 +15,16 @@
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
-  background-color: #dddddd;
+  margin-bottom: 3rem;
+  background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%);
   border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.Project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15), 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .Project-card h3 {
@@ -96,6 +106,13 @@
   background-color: white;
   margin: 10px;
   border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+}
+
+.tech-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
 .tech-card span {
@@ -130,16 +147,18 @@
 }
 
 .Project-card a:visited {
-  color: blue;
+  color: #e57200;
   text-decoration: none;
 }
 
 .Project-card a {
+  color: #e57200;
   text-decoration: none;
+  transition: color 0.2s ease;
 }
 
 .Project-card a:hover {
-  color: blue;
+  color: #d46500;
   text-decoration: underline;
 }
 
@@ -180,5 +199,13 @@
 @media only screen and (max-width: 800px) {
   .FO76 .hero img {
     height: 250px;
+  }
+
+  .hero iframe {
+    height: 250px;
+  }
+
+  .Projects-container h2 {
+    font-size: 2rem;
   }
 }
