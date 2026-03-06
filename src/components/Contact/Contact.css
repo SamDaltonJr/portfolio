@@ -13,11 +13,13 @@
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
-  background-color: #dddddd;
-  border-radius: 10px;
+  background-color: #1e2333;
+  border-radius: 16px;
   padding-top: 25px;
   padding-bottom: 25px;
   margin-bottom: 25px;
+  overflow: hidden;
+  position: relative;
 }
 
 .Contact-card {
@@ -35,13 +37,18 @@
 
 .contact img {
   border-radius: 50%;
-  height: 32px;
-  width: 32px;
+  height: 36px;
+  width: 36px;
+  transition: transform 0.3s ease;
+}
+
+.contact img:hover {
+  transform: scale(1.15);
 }
 
 .contact a {
-  height: 32px;
-  width: 32px;
+  height: 36px;
+  width: 36px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -59,23 +66,28 @@
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
-  background-color: rgba(35, 45, 75, 0.7);
+  background-color: rgba(26, 31, 46, 0.85);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   color: #e57200;
-  border-radius: 10px;
-  padding: 25px;
+  border-radius: 12px;
+  padding: 30px;
   box-sizing: border-box;
+  border: 1px solid rgba(229, 114, 0, 0.15);
 }
 
 .find-me-on p {
   margin-bottom: 5px;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .email-link {
   color: #e57200;
+  transition: color 0.3s ease;
 }
 
 .email-link:hover {
-  color: blue;
+  color: #f4a340;
 }
 
 .contact-stack {

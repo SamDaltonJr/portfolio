@@ -10,6 +10,36 @@ import mongodb from '../../images/mongodb-logo.png';
 import python from '../../images/python.png';
 import pygame from '../../images/pygame.gif';
 
+//NFL Big Data Bowl videos and images
+import completionSpread from '../../images/NFL_BDB/completion_spread.mp4';
+import expectedVsActual from '../../images/NFL_BDB/expected_vs_actual.mp4';
+import stabilityComparison from '../../images/NFL_BDB/stability_comparison.mp4';
+import positionComparison from '../../images/NFL_BDB/position_comparison.mp4';
+import julianLoveINT from '../../images/NFL_BDB/Julian_Love_INT.mp4';
+
+//Python library logos
+import jupyterLogo from '../../images/python_libraries/Jupyter_logo.svg.png';
+import pandasLogo from '../../images/python_libraries/pandas.png';
+import numpyLogo from '../../images/python_libraries/numpy.jpg';
+import sklearnLogo from '../../images/python_libraries/Scikit_learn_logo_small.svg';
+import matplotlibLogo from '../../images/python_libraries/matplotlib.jpg';
+import seabornLogo from '../../images/python_libraries/seaborn.png';
+
+import DelayedLoopVideo from '../DelayedLoopVideo';
+
+//poll dressing logos
+import typescriptLogo from '../../images/typescript.svg';
+import viteLogo from '../../images/vite.svg';
+import firebaseLogo from '../../images/firebase.svg';
+import leafletLogo from '../../images/leaflet.png';
+
+//poll dressing
+import pdMapOverview from '../../images/PollDressing/map-overview.png';
+import pdMyLocations from '../../images/PollDressing/my-locations.png';
+import pdVolunteerAccess from '../../images/PollDressing/volunteer-access.png';
+import pdAdminDashboard from '../../images/PollDressing/admin-dashboard.png';
+import pdAdminStats from '../../images/PollDressing/admin-stats.png';
+
 //gocery
 import gocerylanding from '../../images/Gocery/landing-page.png';
 import lists from '../../images/Gocery/lists-page.png';
@@ -40,6 +70,9 @@ export default class Projects extends React.Component {
       <div className="Projects-container">
         <h2>My Projects</h2>
         <div className="Project-card NFL-BDB">
+          <div className="honorable-mention-badge">
+            Honorable Mention - NFL Big Data Bowl 2026
+          </div>
           <h3>
             <a
               className="github-link"
@@ -53,12 +86,22 @@ export default class Projects extends React.Component {
             |
             <a
               className="app-link"
-              title="Kaggle Competition Write-up"
+              title="Kaggle Competition Page"
               href="https://www.kaggle.com/competitions/nfl-big-data-bowl-2026-analytics"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Kaggle
+              Competition
+            </a>
+            |
+            <a
+              className="app-link"
+              title="Read the Full Write-up"
+              href="https://www.kaggle.com/competitions/nfl-big-data-bowl-2026-analytics/writeups/new-writeup-1765772248137"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Write-up
             </a>
             |
             <a
@@ -71,7 +114,7 @@ export default class Projects extends React.Component {
               Video
             </a>
           </h3>
-          <Carousel>
+          <Carousel interval={10000}>
             <section className="hero">
               <iframe
                 width="100%"
@@ -85,45 +128,78 @@ export default class Projects extends React.Component {
               />
             </section>
             <section className="hero">
+              <DelayedLoopVideo
+                src={julianLoveINT}
+                delay={7000}
+                startTime={2}
+                style={{ width: '100%', maxHeight: '400px', objectFit: 'contain' }}
+              />
               <div className="hero-titles">
-                <h3>Introducing Closure Ratio</h3>
+                <h3>Real-Time Player Tracking</h3>
                 <p>
-                  A new metric that quantifies how effectively defenders close the
-                  gap to receivers during ball flight. Analyzed 12,964 targeted plays
-                  from the 2023-24 NFL season using Next Gen Stats tracking data.
+                  Using NFL Next Gen Stats tracking data to measure Closure Ratio —
+                  how much of the initial gap a defender closes during ball flight.
+                  Julian Love closes 72% of the gap on this play for the interception.
                 </p>
               </div>
             </section>
             <section className="hero">
+              <DelayedLoopVideo
+                src={completionSpread}
+                delay={7000}
+                style={{ width: '100%', maxHeight: '400px', objectFit: 'contain' }}
+              />
               <div className="hero-titles">
                 <h3>Strong Predictive Power</h3>
                 <p>
                   Defenders who close 80%+ of the gap allow just 29.4% completions
                   compared to 69.7% for those closing less than 20%. The 40 percentage
-                  point spread is highly significant (χ² = 453.8, p &lt; 0.001) with
-                  a large effect size (Cohen's h = 0.52).
+                  point spread is highly significant (χ² = 453.8, p &lt; 0.001).
                 </p>
               </div>
             </section>
             <section className="hero">
+              <DelayedLoopVideo
+                src={positionComparison}
+                delay={7000}
+                style={{ width: '100%', maxHeight: '400px', objectFit: 'contain' }}
+              />
               <div className="hero-titles">
-                <h3>Rigorous Statistical Analysis</h3>
+                <h3>Position-Specific Insights</h3>
                 <p>
-                  Employed bootstrap resampling with 1,000 iterations, split-half
-                  reliability testing (r = 0.47), and logistic regression modeling
-                  achieving 0.740 AUC. The metric remains predictive even within
-                  tightly contested plays.
+                  Cornerbacks ("Shadow") close 3.5pp more gap in zone vs. man coverage.
+                  Safeties ("Ball Hawk") maintain consistent ball-hawking regardless of scheme.
+                  Linebackers ("Zone Dropper") contain rather than cover.
                 </p>
               </div>
             </section>
             <section className="hero">
+              <DelayedLoopVideo
+                src={expectedVsActual}
+                delay={7000}
+                style={{ width: '100%', maxHeight: '400px', objectFit: 'contain' }}
+              />
               <div className="hero-titles">
-                <h3>Actionable Insights for Teams</h3>
+                <h3>Expected vs Actual Performance</h3>
                 <p>
-                  Reveals position-specific coverage patterns: cornerbacks close 3.5pp
-                  more gap in zone vs. man coverage, while safeties maintain consistent
-                  ball-hawking regardless of scheme. Provides player rankings and
-                  coverage-adjusted percentiles.
+                  Compare defender performance against expected closure rates,
+                  identifying players who consistently outperform or underperform
+                  their coverage assignments.
+                </p>
+              </div>
+            </section>
+            <section className="hero">
+              <DelayedLoopVideo
+                src={stabilityComparison}
+                delay={7000}
+                style={{ width: '100%', maxHeight: '400px', objectFit: 'contain' }}
+              />
+              <div className="hero-titles">
+                <h3>Metric Stability</h3>
+                <p>
+                  Split-half reliability testing (r = 0.47) confirms Closure Ratio
+                  measures persistent skill rather than random variation. The metric
+                  remains predictive even within tightly contested plays.
                 </p>
               </div>
             </section>
@@ -131,26 +207,135 @@ export default class Projects extends React.Component {
           <p className="made-with">Made with:</p>
           <ul className="project-stack">
             <li className="tech-card">
-              <img src={python} alt="python logo" className="logo200" />
+              <img src={python} alt="Python logo" className="logo200" />
               <span>Python</span>
             </li>
             <li className="tech-card">
+              <img src={jupyterLogo} alt="Jupyter logo" className="logo32" />
               <span>Jupyter</span>
             </li>
             <li className="tech-card">
+              <img src={pandasLogo} alt="pandas logo" className="logo200" />
               <span>pandas</span>
             </li>
             <li className="tech-card">
+              <img src={numpyLogo} alt="NumPy logo" className="logo32" />
               <span>NumPy</span>
             </li>
             <li className="tech-card">
+              <img src={sklearnLogo} alt="scikit-learn logo" className="logo200" />
               <span>scikit-learn</span>
             </li>
             <li className="tech-card">
+              <img src={matplotlibLogo} alt="matplotlib logo" className="logo32" />
               <span>matplotlib</span>
             </li>
             <li className="tech-card">
+              <img src={seabornLogo} alt="seaborn logo" className="logo32" />
               <span>seaborn</span>
+            </li>
+          </ul>
+        </div>
+        <div className="Project-card PollDressing">
+          <h3>
+            <a
+              className="github-link"
+              title="Campaign Sign Tracker Repository"
+              href="https://github.com/SamDaltonJr/poll_dressing_primary"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Campaign Sign Tracker
+            </a>
+            |
+            <a
+              className="app-link"
+              title="Campaign Sign Tracker Live"
+              href="https://samdaltonjr.github.io/poll_dressing_primary/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Live
+            </a>
+          </h3>
+          <Carousel>
+            <section className="hero">
+              <img src={pdMapOverview} alt="Campaign Sign Tracker map overview" />
+              <div className="hero-titles">
+                <h3>Coordinate Campaign Signs Across North Texas</h3>
+                <p>
+                  A mobile-friendly web app that helps volunteers coordinate
+                  campaign sign placement at polling locations across Dallas,
+                  Tarrant, Denton, and Collin counties. Features an interactive
+                  map with color-coded pins showing location status in real time.
+                </p>
+              </div>
+            </section>
+            <section className="hero">
+              <img src={pdVolunteerAccess} alt="Volunteer access gate" />
+              <div className="hero-titles">
+                <h3>Volunteer Claim & Confirm Workflow</h3>
+                <p>
+                  Volunteers enter an access code from their coordinator, claim
+                  available locations, drive out to place signs, then confirm
+                  placement with a sign count — all from their phone.
+                </p>
+              </div>
+            </section>
+            <section className="hero">
+              <img src={pdMyLocations} alt="My Locations page" />
+              <div className="hero-titles">
+                <h3>Route Planning</h3>
+                <p>
+                  The "My Locations" tab shows all claimed sites and generates
+                  multi-stop Google Maps directions for efficient route planning.
+                </p>
+              </div>
+            </section>
+            <section className="hero">
+              <img src={pdAdminDashboard} alt="Admin Dashboard" />
+              <div className="hero-titles">
+                <h3>Admin Dashboard</h3>
+                <p>
+                  Admins can manage all 722 polling locations, filter by status,
+                  search by name or county, and take actions like marking locations
+                  as dressed or reverting status changes.
+                </p>
+              </div>
+            </section>
+            <section className="hero">
+              <img src={pdAdminStats} alt="Admin Stats" />
+              <div className="hero-titles">
+                <h3>County-by-County Stats</h3>
+                <p>
+                  Track progress across 9 counties with real-time stats showing
+                  dressed, claimed, and available locations with visual progress
+                  bars for each county.
+                </p>
+              </div>
+            </section>
+          </Carousel>
+          <p className="made-with">Made with:</p>
+          <ul className="project-stack">
+            <li className="tech-card">
+              <img src={react} alt="react logo" className="logo32" />
+              <span>React</span>
+            </li>
+            <li className="tech-card">
+              <img src={typescriptLogo} alt="TypeScript logo" className="logo32" />
+              <span>TypeScript</span>
+            </li>
+            <li className="tech-card">
+              <img src={leafletLogo} alt="Leaflet logo" className="logo200" />
+              <span>Leaflet</span>
+            </li>
+            <li className="tech-card">
+              <img src={firebaseLogo} alt="Firebase logo" className="logo32" />
+              <span>Firebase</span>
+            </li>
+            <li className="tech-card">
+              <img src={viteLogo} alt="Vite logo" className="logo32" />
+              <span>Vite</span>
             </li>
           </ul>
         </div>
@@ -164,16 +349,6 @@ export default class Projects extends React.Component {
               rel="noopener noreferrer"
             >
               GoCery
-            </a>
-            |
-            <a
-              className="app-link"
-              title="GoCery Live"
-              href="https://gocery-app.netlify.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Live
             </a>
           </h3>
           <p className="project-description" />
@@ -252,16 +427,6 @@ export default class Projects extends React.Component {
             >
               Inventory Manager
             </a>
-            |
-            <a
-              className="app-link"
-              title="Inventory Manager App"
-              href="https://inventory-management-app-fo76.herokuapp.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Live
-            </a>
           </h3>
           <Carousel>
             <section className="hero">
@@ -336,15 +501,6 @@ export default class Projects extends React.Component {
             >
               Blackjack
             </a>
-            |
-            <a
-              className="app-link"
-              title="Download Blackjack app"
-              href="/files/blackjack.zip"
-              download
-            >
-              Play
-            </a>
           </h3>
           <Carousel>
             <section className="hero">
@@ -394,16 +550,6 @@ export default class Projects extends React.Component {
               rel="noopener noreferrer"
             >
               NoteShark
-            </a>
-            |
-            <a
-              className="app-link"
-              title="NoteShark app link"
-              href="https://knotes-client-sam.herokuapp.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Live
             </a>
           </h3>
           <Carousel>
