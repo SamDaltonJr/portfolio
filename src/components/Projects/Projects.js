@@ -27,6 +27,19 @@ import seabornLogo from '../../images/python_libraries/seaborn.png';
 
 import DelayedLoopVideo from '../DelayedLoopVideo';
 
+//poll dressing logos
+import typescriptLogo from '../../images/typescript.svg';
+import viteLogo from '../../images/vite.svg';
+import firebaseLogo from '../../images/firebase.svg';
+import leafletLogo from '../../images/leaflet.png';
+
+//poll dressing
+import pdMapOverview from '../../images/PollDressing/map-overview.png';
+import pdMyLocations from '../../images/PollDressing/my-locations.png';
+import pdVolunteerAccess from '../../images/PollDressing/volunteer-access.png';
+import pdAdminDashboard from '../../images/PollDressing/admin-dashboard.png';
+import pdAdminStats from '../../images/PollDressing/admin-stats.png';
+
 //gocery
 import gocerylanding from '../../images/Gocery/landing-page.png';
 import lists from '../../images/Gocery/lists-page.png';
@@ -220,6 +233,109 @@ export default class Projects extends React.Component {
             <li className="tech-card">
               <img src={seabornLogo} alt="seaborn logo" className="logo32" />
               <span>seaborn</span>
+            </li>
+          </ul>
+        </div>
+        <div className="Project-card PollDressing">
+          <h3>
+            <a
+              className="github-link"
+              title="Campaign Sign Tracker Repository"
+              href="https://github.com/SamDaltonJr/poll_dressing_primary"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Campaign Sign Tracker
+            </a>
+            |
+            <a
+              className="app-link"
+              title="Campaign Sign Tracker Live"
+              href="https://samdaltonjr.github.io/poll_dressing_primary/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Live
+            </a>
+          </h3>
+          <Carousel>
+            <section className="hero">
+              <img src={pdMapOverview} alt="Campaign Sign Tracker map overview" />
+              <div className="hero-titles">
+                <h3>Coordinate Campaign Signs Across North Texas</h3>
+                <p>
+                  A mobile-friendly web app that helps volunteers coordinate
+                  campaign sign placement at polling locations across Dallas,
+                  Tarrant, Denton, and Collin counties. Features an interactive
+                  map with color-coded pins showing location status in real time.
+                </p>
+              </div>
+            </section>
+            <section className="hero">
+              <img src={pdVolunteerAccess} alt="Volunteer access gate" />
+              <div className="hero-titles">
+                <h3>Volunteer Claim & Confirm Workflow</h3>
+                <p>
+                  Volunteers enter an access code from their coordinator, claim
+                  available locations, drive out to place signs, then confirm
+                  placement with a sign count — all from their phone.
+                </p>
+              </div>
+            </section>
+            <section className="hero">
+              <img src={pdMyLocations} alt="My Locations page" />
+              <div className="hero-titles">
+                <h3>Route Planning</h3>
+                <p>
+                  The "My Locations" tab shows all claimed sites and generates
+                  multi-stop Google Maps directions for efficient route planning.
+                </p>
+              </div>
+            </section>
+            <section className="hero">
+              <img src={pdAdminDashboard} alt="Admin Dashboard" />
+              <div className="hero-titles">
+                <h3>Admin Dashboard</h3>
+                <p>
+                  Admins can manage all 722 polling locations, filter by status,
+                  search by name or county, and take actions like marking locations
+                  as dressed or reverting status changes.
+                </p>
+              </div>
+            </section>
+            <section className="hero">
+              <img src={pdAdminStats} alt="Admin Stats" />
+              <div className="hero-titles">
+                <h3>County-by-County Stats</h3>
+                <p>
+                  Track progress across 9 counties with real-time stats showing
+                  dressed, claimed, and available locations with visual progress
+                  bars for each county.
+                </p>
+              </div>
+            </section>
+          </Carousel>
+          <p className="made-with">Made with:</p>
+          <ul className="project-stack">
+            <li className="tech-card">
+              <img src={react} alt="react logo" className="logo32" />
+              <span>React</span>
+            </li>
+            <li className="tech-card">
+              <img src={typescriptLogo} alt="TypeScript logo" className="logo32" />
+              <span>TypeScript</span>
+            </li>
+            <li className="tech-card">
+              <img src={leafletLogo} alt="Leaflet logo" className="logo200" />
+              <span>Leaflet</span>
+            </li>
+            <li className="tech-card">
+              <img src={firebaseLogo} alt="Firebase logo" className="logo32" />
+              <span>Firebase</span>
+            </li>
+            <li className="tech-card">
+              <img src={viteLogo} alt="Vite logo" className="logo32" />
+              <span>Vite</span>
             </li>
           </ul>
         </div>

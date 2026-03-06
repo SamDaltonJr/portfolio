@@ -184,6 +184,10 @@
   text-shadow: 0 0 8px rgba(229, 114, 0, 0.3);
 }
 
+.PollDressing .hero-titles {
+  height: 240px;
+}
+
 .GoCery .hero-titles {
   height: 240px;
 }
@@ -201,6 +205,10 @@
 }
 
 @media only screen and (min-width: 800px) {
+  .PollDressing .hero-titles {
+    height: 175px;
+  }
+
   .GoCery .hero-titles {
     height: 175px;
   }
