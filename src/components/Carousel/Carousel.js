@@ -12,7 +12,8 @@ export default class Carousel extends React.Component {
   }
 
   componentDidMount() {
-    this.timer = setInterval(() => this.nextChild(), 8000);
+    const { interval = 8000 } = this.props;
+    this.timer = setInterval(() => this.nextChild(), interval);
   }
 
   componentWillUnmount() {

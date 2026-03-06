@@ -6,7 +6,7 @@ const ContactForm = () => (
   <form
     className="contact-form"
     method="POST"
-    action="https://formspree.io/spdaltonjr@gmail.com"
+    action="https://formspree.io/f/spdaltonjr@gmail.com"
   >
     <div className="form-field">
       <label htmlFor="name">
